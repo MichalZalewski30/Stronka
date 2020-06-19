@@ -1,1 +1,197 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Stronka z RPG</title>
+        <script> <!--Odliczanie skrypt JS--> 
+            setTimeout(wakeUpUser, 5000); 
+            function wakeUpUser(){
+                alert("Zasadzka! Strzała w kolano");
+            }
+           
+        </script>
+
+        
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+
+        <link rel="stylesheet" href="styles.css"> <!-- przerzucenie do pliku z kodem CSS -->
+         <style> 
+           #myHeader {
+            background-color: lightblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+            } 
+            body {
+              background-image:  <img src="Obrazki\Swiebodzki.jpg" style="max-width:100%;height:auto;">;
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+            table, th, td {
+                border: 2px solid black;
+                padding: 10px;
+            }
+            table {
+                border-spacing: 5px;
+            }
+            table#t01 {
+                width: 50%;
+                 background-color: white;
+            }
+            table#t02{
+                width: 50%;
+                 background-color: skyblue;
+            }
+            ul {
+               list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333333;
+                }
+
+            li {
+              float: left;
+            }
+
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 16px;
+              text-decoration: none;
+            }
+
+            li a:hover {
+              background-color: #111111;
+            }
+
+            .city {
+              background-color: black;
+              color: whitesmoke;
+              margin: 20px;
+              padding: 20px;
+            }
+            #myHeader {
+              background-color: lightblue;
+              color: black;
+              padding: 40px;
+              text-align: center;
+} 
+        </style>
+</head>
+
+<body style="background-color: rgba(15, 120, 71, 0.5); border:2px solid Tomato;"> <!-- Kolory + skalowanie nasycenia --> 
+
+<h1 id="myHeader">Nagłówek na górze strony</h1>
+
+<ul> <!-- Tabeleczka co to się będzie rozwijała w paseczki-->
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+
+<h1 style="color:blue; text-align:center;">Nagłówek mnijszy i dolniejszy</h1>
+<p1 style="color:orange; ">Hej, piszę tą stronkę by ułatwić Wam połapanie się o co c'mon, a sobie by się nauczyć</p1> <br>
+<p1> <a href="https://www.worldanvil.com/world/article/list">Wcześniej było to na tej stronce, ale zakładam że zaraz bedzie przeniesione na serwer </a> </p1> <br>
+<p1>  <button> Naciśnij</button> </p1> <br>
+<img src="C:\Users\Micha\Desktop\Michał\RPG\whRPG\74426730_1272828146237134_9098110037221441536_n.jpg" alt="Spójrz w górę" width="150" height="150">
+<hr>
+
+<!--
+<p> <code> do zapamiętania spamowa linijka
+x = 5;<br>
+y = 6;<br>
+z = x + y;
+</code> </p> -->
+
+<table id="t01">
+<caption>Gracze</caption>
+<tr>
+<td>ID</td>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Age</th>
+<th colspan="2">Postać</th>
+<th> Posiadany środek transportu</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Roland <!--id="fname"--> </td>
+<th>Farys<!--id="lname"--></th>
+<td>29</td>
+<td>Imię: blank<!--id="fnamep"--></td>
+<td>Nazwisko: blank <!--id="lnamep"--></td>
+<td rowspan="3">Wóz jednokonny </td>
+</tr>
+<tr>
+<td>2</td>
+<td>Aleksandra<!--id="fname"--></td>
+<th>Surlej-Farys<!--id="lname"--></th>
+<td>Blank</td>
+<td>Imię: blank<!--id="fnamep"--></td>
+<td>Nazwisko: blank <!--id="lnamep"--></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Michał<!--id="fname"--></td>
+<th>Gołka<!--id="lname"--></th>
+<td>Blank</td>
+<td>Imię: blank<!--id="fnamep"--></td>
+<td>Nazwisko: blank <!--id="lnamep"--></td>
+<!--</tr>
+<tr> 
+<td> </td>
+</tr>
+</table> </p2> 
+<hr></br>-->
+
+
+<table id="t02">
+<caption>Oszczędności</caption>
+<tr>
+<td>ID</td>
+<th>Imie Gracza</th>
+<th>Imie Postaci</th>
+<th>Kwota</th>
+</tr>
+<tr>
+<td>1</td>
+<th>Roland <!--id="fname"--> Farys<!--id="lname"--></th>
+<th> <!--id="fnamep"--> <!--id="lnamep"--> </th>
+<th>5 Gold</th>
+</tr>
+<tr>
+<td>2</td>
+<th>Aleksandra<!--id="fname"--> Surlej-Farys<!--id="lname"--> </th>
+<th> <!--id="fnamep"--> <!--id="lnamep"--> </th>
+<th>10 Gold</th>
+</tr>
+<tr>
+<td>3</td>
+<th>Michał<!--id="fname"-->Gołka<!--id="lname"--></th>
+<th> <!--id="fnamep"--> <!--id="lnamep"--> </th>
+<th>15 Gold</th>
+</tr>
+</table> 
+
+
+</body>
+
+<footer>
+  <address>
+        Written by Michał Zalewski<br>
+        Visit us at:<br>
+        Ruska 64/4, Wrocław<br>
+        Poland
+  </address> 
+        
+</footer>
+</html>
 
